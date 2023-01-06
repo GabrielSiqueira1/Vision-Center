@@ -5,6 +5,7 @@ import { BsList, BsCart4, BsSearch } from 'react-icons/bs';
 import { AiOutlineLogin } from 'react-icons/ai';
 
 import Logo from './assets/logo.png'
+import Hero from './assets/hero.jpg'
 
 function App() {
   return (
@@ -53,7 +54,22 @@ function App() {
               </div>
             </div>
           </div>
-          <div id='hero'></div>
+          <div id='hero' className='p-5'>
+            <div className='transform duration-500 hover:shadow-2xl relative'>
+              <img className='xl:max-w=6xl' src={Hero} alt='' />
+              <div className='content bg-white md:p-12 p-12 pt-8 lg:max-w-3xl w-full lg:absolute top-48 right-5 shadow-2xl'>
+                <div className='flex justify-between font-bold text-sm'>
+                  <p>Peaceful Glasses</p>
+                  <p>{faker.date.past().getFullYear()}</p>
+                </div>
+                <h2 className='text-5xl font-bold mt-4 md:mt-10 uppercase'>Peaceful Glasses</h2>
+                <p className='pt-5'>{faker.lorem.sentence()}</p>
+                <p className='text-center text-[24px] pt-10 pb-10'>
+                  <button className='p-3 w-60 text-black font-bold rounded-full transform duration-500' style={{ background: '#888888' }}> Register Now </button>
+                </p>
+              </div>
+            </div>
+          </div>
           <div id='menu' className='pl-5 pr-5'></div>
           <div id='product' className='pl-5 pr-5'></div>
           <div id='blog' className='pl-5 pr-5'></div>
