@@ -1,7 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 import { faker } from '@faker-js/faker';
-import { BsList } from 'react-icons/bs';
+import { BsList, BsCart4, BsSearch } from 'react-icons/bs';
+import { AiOutlineLogin } from 'react-icons/ai';
 
 import Logo from './assets/logo.png'
 
@@ -36,8 +37,19 @@ function App() {
                   <a href='#about'>About</a>
                 </div>
               </div>
-              <div>
-                icon01 icon02 icon03
+              <div className='flex justify-between gap-2'>
+                <div className='text-2xl p-2 rounded-full hover:bg-gray-200 hover:ease-in-out duration-500 cursor-pointer'>
+                  <BsSearch />
+                </div>
+                <div className='text-2xl p-2 rounded-full hover:bg-gray-200 hover:ease-in-out duration-500 cursor-pointer relative inline-flex'>
+                  <BsCart4 />
+                  <div className='absolute -top-0 -right-1 h-5 w-5 text-xs text-center text-black border-1 rounded-full'>
+                    5
+                  </div>
+                </div>
+                <div className='text-2xl p-2 rounded-full hover:bg-gray-200 hover:ease-in-out duration-500 cursor-pointer'>
+                  <AiOutlineLogin />
+                </div>
               </div>
             </div>
           </div>
