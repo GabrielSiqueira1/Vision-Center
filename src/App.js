@@ -1,13 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
 import { faker } from '@faker-js/faker';
-import { BsList, BsCart4, BsSearch } from 'react-icons/bs';
+import { BsList, BsCart4, BsSearch, BsStarFill, BsStarHalf, BsStar } from 'react-icons/bs';
 import { AiOutlineLogin } from 'react-icons/ai';
 
-import Logo from './assets/logo.png'
-import Hero from './assets/hero.jpg'
+import Logo from './assets/logo.png';
+import Hero from './assets/hero.jpg';
+import Glasses01 from './assets/glasses-01.jpg';
+import Glasses02 from './assets/glasses-02.jpg';
+import Glasses03 from './assets/glasses-03.jpg';
+import Glasses04 from './assets/glasses-04.jpg';
+import Glasses05 from './assets/glasses-05.jpg';
 
 function App() {
+
+  const MiddleBar = `p-2 pl-5 pr-5 hover:bg-gray-200 rounded-lg hover:ease-in-out duration-500`;
+  const LastBar = `text-2xl p-2 rounded-full hover:bg-gray-200 hover:ease-in-out duration-500 cursor-pointer`;
+
   return (
     <div className=''>
       <div className='bg-gray-50 text-gray-700'>
@@ -22,24 +31,24 @@ function App() {
                 <p className='text-[20px] uppercase'>Vision Center</p>
               </div>
               <div className='font-bold hidden justify-center lg:flex'>
-                <div className='p-2 pl-5 pr-5 hover:bg-gray-200 rounded-lg hover:ease-in-out duration-500'>
+                <div className={MiddleBar}>
                   <a href='#home'>Home</a>
                 </div>
-                <div className='p-2 pl-5 pr-5 hover:bg-gray-200 rounded-lg hover:ease-in-out duration-500'>
+                <div className={MiddleBar}>
                   <a href='#menu'>Menu</a>
                 </div>
-                <div className='p-2 pl-5 pr-5 hover:bg-gray-200 rounded-lg hover:ease-in-out duration-500'>
+                <div className={MiddleBar}>
                   <a href='#product'>Product</a>
                 </div>
-                <div className='p-2 pl-5 pr-5 hover:bg-gray-200 rounded-lg hover:ease-in-out duration-500'>
+                <div className={MiddleBar}>
                   <a href='#blog'>Blogs</a>
                 </div>
-                <div className='p-2 pl-5 pr-5 hover:bg-gray-200 rounded-lg hover:ease-in-out duration-500'>
+                <div className={MiddleBar}>
                   <a href='#about'>About</a>
                 </div>
               </div>
               <div className='flex justify-between gap-2'>
-                <div className='text-2xl p-2 rounded-full hover:bg-gray-200 hover:ease-in-out duration-500 cursor-pointer'>
+                <div className={LastBar}>
                   <BsSearch />
                 </div>
                 <div className='text-2xl p-2 rounded-full hover:bg-gray-200 hover:ease-in-out duration-500 cursor-pointer relative inline-flex'>
@@ -48,7 +57,7 @@ function App() {
                     5
                   </div>
                 </div>
-                <div className='text-2xl p-2 rounded-full hover:bg-gray-200 hover:ease-in-out duration-500 cursor-pointer'>
+                <div className={LastBar}>
                   <AiOutlineLogin />
                 </div>
               </div>
