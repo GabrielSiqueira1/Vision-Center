@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { faker } from '@faker-js/faker';
-import { BsList, BsCart4, BsSearch, BsStarFill, BsStarHalf, BsStar } from 'react-icons/bs';
+import { BsList, BsCart4, BsSearch, BsStarFill, BsStarHalf, BsStar, BsArrowBarUp } from 'react-icons/bs';
 import { AiOutlineLogin } from 'react-icons/ai';
 
 import Logo from './assets/logo.png';
@@ -24,6 +24,17 @@ function App() {
   return (
     <div className=''>
       <div className='bg-gray-50 text-gray-700'>
+        <div className='fixed right-4 bottom-4' style={{ zIndex: '10000' }}>
+          <div>
+            <button type='button' onClick={() => {}}
+            style={{background: '#888888', borderRadius: '50%'}}
+            className='text-3xl text-white p-3 hover:drop-shadow-xl hover:bg-light-gray'>
+              <a href='#home'>
+                <BsArrowBarUp />
+              </a>
+            </button>
+          </div>
+        </div>
         <div className='container mx-auto transform duration-500'>
           <div id='home' className='pl-4 pr-4 pt-5 pb-7'>
             <div className='flex justify-between items-center align-middle'>
