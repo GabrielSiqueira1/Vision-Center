@@ -11,11 +11,15 @@ import Glasses02 from './assets/glasses-02.jpg';
 import Glasses03 from './assets/glasses-03.jpg';
 import Glasses04 from './assets/glasses-04.jpg';
 import Glasses05 from './assets/glasses-05.jpeg';
+import Lens01 from './assets/lens-01.jpg'
+import Lens02 from './assets/lens-02.jpg'
+import Lens03 from './assets/lens-03.jpg'
 
 function App() {
 
   const MiddleBar = `p-2 pl-5 pr-5 hover:bg-gray-200 rounded-lg hover:ease-in-out duration-500`;
   const LastBar = `text-2xl p-2 rounded-full hover:bg-gray-200 hover:ease-in-out duration-500 cursor-pointer`;
+  const SectionItems = `mx-auto group shadow-2xl pb-8 rounded-b-2xl transform duration-500 bg-white`;
 
   return (
     <div className=''>
@@ -86,7 +90,7 @@ function App() {
               </div>
             </div>
             <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-4 gap-5'>
-              <div className='mx-auto group shadow-2xl pb-8 rounded-b-2xl transform duration-500 bg-white'>
+              <div className={SectionItems}>
                 <img className='object-cover w-full rounded-2xl h-64' src={Glasses01} alt='' />
                 <div className='p-5'>
                   <div className='flex items-center gap-1'>
@@ -116,7 +120,7 @@ function App() {
                   </div>
                 </div>
               </div>
-              <div className='mx-auto group shadow-2xl pb-8 rounded-b-2xl transform duration-500 bg-white'>
+              <div className={SectionItems}>
                 <img className='object-cover w-full rounded-2xl h-64' src={Glasses02} alt='' />
                 <div className='p-5'>
                   <div className='flex items-center gap-1'>
@@ -146,7 +150,7 @@ function App() {
                   </div>
                 </div>
               </div>
-              <div className='mx-auto group shadow-2xl pb-8 rounded-b-2xl transform duration-500 bg-white'>
+              <div className={SectionItems}>
                 <img className='object-cover w-full rounded-2xl h-64' src={Glasses03} alt='' />
                 <div className='p-5'>
                   <div className='flex items-center gap-1'>
@@ -176,7 +180,7 @@ function App() {
                   </div>
                 </div>
               </div>
-              <div className='mx-auto group shadow-2xl pb-8 rounded-b-2xl transform duration-500 bg-white'>
+              <div className={SectionItems}>
                 <img className='object-cover w-full rounded-2xl h-64' src={Glasses04} alt='' />
                 <div className='p-5'>
                   <div className='flex items-center gap-1'>
@@ -206,7 +210,7 @@ function App() {
                   </div>
                 </div>
               </div>
-              <div className='mx-auto group shadow-2xl pb-8 rounded-b-2xl transform duration-500 bg-white'>
+              <div className={SectionItems}>
                 <img className='object-cover w-full rounded-2xl h-64' src={Glasses05} alt='' />
                 <div className='p-5'>
                   <div className='flex items-center gap-1'>
@@ -238,7 +242,99 @@ function App() {
               </div>
             </div>
           </div>
-          <div id='product' className='pl-5 pr-5'></div>
+          <div id='product' className='pl-5 pr-5'>
+            <div className='p-5 pt-10'>
+              <div className='text-[26px] font-bold text-center uppercase'>
+                PRODUCTS
+              </div>
+            </div>
+            <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-4 gap-5'>
+              <div className={SectionItems}>
+              <img className='object-cover w-full rounded-2xl h-64' src={Lens01} alt='' />
+              <div className='p-5 pr-5 text-justify'>
+                <div className='pb-5 flex items-center gap-1'>
+                    <span><BsStarFill /></span>
+                    <span><BsStarFill /></span>
+                    <span><BsStarFill /></span>
+                    <span><BsStarFill /></span>
+                    <span><BsStar /></span>
+                </div>
+                <h5 className='text-2xl font-bold tracking-tight'>
+                  {faker.lorem.sentence()}
+                </h5>
+                <p>
+                  {faker.lorem.sentences()}
+                </p>
+              </div>
+              <div className='p-5 flex justify-between flex-col items-center'>
+                <p className='font-bold text-2xl pb-5'>
+                  ${faker.commerce.price(100)}
+                </p>
+                <div>
+                  <button className='rounded-full p-2 w-36 font-bold text-gray-50' style={{ background: '#888888' }}>
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+              </div>
+              <div className={SectionItems}>
+              <img className='object-cover w-full rounded-2xl h-64' src={Lens03} alt='' />
+              <div className='p-5 pr-5 text-justify'>
+                <div className='pb-5 flex items-center gap-1'>
+                    <span><BsStarFill /></span>
+                    <span><BsStarFill /></span>
+                    <span><BsStarFill /></span>
+                    <span><BsStarFill /></span>
+                    <span><BsStar /></span>
+                </div>
+                <h5 className='text-2xl font-bold tracking-tight'>
+                  {faker.lorem.sentence()}
+                </h5>
+                <p>
+                  {faker.lorem.sentences()}
+                </p>
+              </div>
+              <div className='p-5 flex justify-between flex-col items-center'>
+                <p className='font-bold text-2xl pb-5'>
+                  ${faker.commerce.price(100)}
+                </p>
+                <div>
+                  <button className='rounded-full p-2 w-36 font-bold text-gray-50' style={{ background: '#888888' }}>
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+              </div>
+              <div className={SectionItems}>
+              <img className='object-cover w-full rounded-2xl h-64' src={Lens02} alt='' />
+              <div className='p-5 pr-5 text-justify'>
+                <div className='pb-5 flex items-center gap-1'>
+                    <span><BsStarFill /></span>
+                    <span><BsStarFill /></span>
+                    <span><BsStarFill /></span>
+                    <span><BsStarFill /></span>
+                    <span><BsStar /></span>
+                </div>
+                <h5 className='text-2xl font-bold tracking-tight'>
+                  {faker.lorem.sentence()}
+                </h5>
+                <p>
+                  {faker.lorem.sentences()}
+                </p>
+              </div>
+              <div className='p-5 flex justify-between flex-col items-center'>
+                <p className='font-bold text-2xl pb-5'>
+                  ${faker.commerce.price(100)}
+                </p>
+                <div>
+                  <button className='rounded-full p-2 w-36 font-bold text-gray-50' style={{ background: '#888888' }}>
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
           <div id='blog' className='pl-5 pr-5'></div>
           <div id='about' className='pl-5 pr-5'></div>
         </div>
