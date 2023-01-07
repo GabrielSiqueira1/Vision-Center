@@ -10,7 +10,7 @@ import Glasses01 from './assets/glasses-01.jpg';
 import Glasses02 from './assets/glasses-02.jpg';
 import Glasses03 from './assets/glasses-03.jpg';
 import Glasses04 from './assets/glasses-04.jpg';
-import Glasses05 from './assets/glasses-05.jpg';
+import Glasses05 from './assets/glasses-05.jpeg';
 
 function App() {
 
@@ -79,7 +79,165 @@ function App() {
               </div>
             </div>
           </div>
-          <div id='menu' className='pl-5 pr-5'></div>
+          <div id='menu' className='pl-5 pr-5'>
+            <div className='p-5 pt-10'>
+              <div className='text-[26px] font-bold text-center uppercase'>
+                AVAILABLE GLASSES
+              </div>
+            </div>
+            <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 2xl:grid-cols-4 gap-5'>
+              <div className='mx-auto group shadow-2xl pb-8 rounded-b-2xl transform duration-500 bg-white'>
+                <img className='object-cover w-full rounded-2xl h-64' src={Glasses01} alt='' />
+                <div className='p-5'>
+                  <div className='flex items-center gap-1'>
+                    <span><BsStarFill /></span>
+                    <span><BsStarFill /></span>
+                    <span><BsStarFill /></span>
+                    <span><BsStarFill /></span>
+                    <span><BsStarHalf /></span>
+                  </div>
+                </div>
+                <div className='p-5 pr-5 text-justify'>
+                  <h5 className='text-2xl font-bold tracking-tight'>
+                    {faker.lorem.sentence()}
+                  </h5>
+                  <p>
+                    {faker.lorem.sentences()}
+                  </p>
+                </div>
+                <div className='p-5 flex flex-row justify-between items-baseline'>
+                  <p className='font-bold text-2xl'>
+                    ${faker.commerce.price(100)}
+                  </p>
+                  <div>
+                    <button className='rounded-full p-2 w-36 font-bold text-gray-50' style={{ background: '#888888' }}>
+                      Add to cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div className='mx-auto group shadow-2xl pb-8 rounded-b-2xl transform duration-500 bg-white'>
+                <img className='object-cover w-full rounded-2xl h-64' src={Glasses02} alt='' />
+                <div className='p-5'>
+                  <div className='flex items-center gap-1'>
+                    <span><BsStarFill /></span>
+                    <span><BsStarFill /></span>
+                    <span><BsStarFill /></span>
+                    <span><BsStarFill /></span>
+                    <span><BsStar /></span>
+                  </div>
+                </div>
+                <div className='p-5 pr-5 text-justify'>
+                  <h5 className='text-2xl font-bold tracking-tight'>
+                    {faker.lorem.sentence()}
+                  </h5>
+                  <p>
+                    {faker.lorem.sentences()}
+                  </p>
+                </div>
+                <div className='p-5 flex flex-row justify-between items-baseline'>
+                  <p className='font-bold text-2xl'>
+                    ${faker.commerce.price(100)}
+                  </p>
+                  <div>
+                    <button className='rounded-full p-2 w-36 font-bold text-gray-50' style={{ background: '#888888' }}>
+                      Add to cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div className='mx-auto group shadow-2xl pb-8 rounded-b-2xl transform duration-500 bg-white'>
+                <img className='object-cover w-full rounded-2xl h-64' src={Glasses03} alt='' />
+                <div className='p-5'>
+                  <div className='flex items-center gap-1'>
+                    <span><BsStarFill /></span>
+                    <span><BsStarFill /></span>
+                    <span><BsStarFill /></span>
+                    <span><BsStarFill /></span>
+                    <span><BsStar /></span>
+                  </div>
+                </div>
+                <div className='p-5 pr-5 text-justify'>
+                  <h5 className='text-2xl font-bold tracking-tight'>
+                    {faker.lorem.sentence()}
+                  </h5>
+                  <p>
+                    {faker.lorem.sentences()}
+                  </p>
+                </div>
+                <div className='p-5 flex flex-row justify-between items-baseline'>
+                  <p className='font-bold text-2xl'>
+                    ${faker.commerce.price(100)}
+                  </p>
+                  <div>
+                    <button className='rounded-full p-2 w-36 font-bold text-gray-50' style={{ background: '#888888' }}>
+                      Add to cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div className='mx-auto group shadow-2xl pb-8 rounded-b-2xl transform duration-500 bg-white'>
+                <img className='object-cover w-full rounded-2xl h-64' src={Glasses04} alt='' />
+                <div className='p-5'>
+                  <div className='flex items-center gap-1'>
+                    <span><BsStarFill /></span>
+                    <span><BsStarFill /></span>
+                    <span><BsStarFill /></span>
+                    <span><BsStarFill /></span>
+                    <span><BsStar /></span>
+                  </div>
+                </div>
+                <div className='p-5 pr-5 text-justify'>
+                  <h5 className='text-2xl font-bold tracking-tight'>
+                    {faker.lorem.sentence()}
+                  </h5>
+                  <p>
+                    {faker.lorem.sentences()}
+                  </p>
+                </div>
+                <div className='p-5 flex flex-row justify-between items-baseline'>
+                  <p className='font-bold text-2xl'>
+                    ${faker.commerce.price(100)}
+                  </p>
+                  <div>
+                    <button className='rounded-full p-2 w-36 font-bold text-gray-50' style={{ background: '#888888' }}>
+                      Add to cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div className='mx-auto group shadow-2xl pb-8 rounded-b-2xl transform duration-500 bg-white'>
+                <img className='object-cover w-full rounded-2xl h-64' src={Glasses05} alt='' />
+                <div className='p-5'>
+                  <div className='flex items-center gap-1'>
+                    <span><BsStarFill /></span>
+                    <span><BsStarFill /></span>
+                    <span><BsStarFill /></span>
+                    <span><BsStarFill /></span>
+                    <span><BsStar /></span>
+                  </div>
+                </div>
+                <div className='p-5 pr-5 text-justify'>
+                  <h5 className='text-2xl font-bold tracking-tight'>
+                    {faker.lorem.sentence()}
+                  </h5>
+                  <p>
+                    {faker.lorem.sentences()}
+                  </p>
+                </div>
+                <div className='p-5 flex flex-row justify-between items-baseline'>
+                  <p className='font-bold text-2xl'>
+                    ${faker.commerce.price(100)}
+                  </p>
+                  <div>
+                    <button className='rounded-full p-2 w-36 font-bold text-gray-50' style={{ background: '#888888' }}>
+                      Add to cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <div id='product' className='pl-5 pr-5'></div>
           <div id='blog' className='pl-5 pr-5'></div>
           <div id='about' className='pl-5 pr-5'></div>
