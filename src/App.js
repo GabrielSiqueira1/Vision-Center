@@ -346,7 +346,38 @@ function App() {
               </div>
             </div>
           </div>
-          <div id='blog' className='pl-5 pr-5'></div>
+          <div id='blog' className='pl-5 pr-5'>
+            <div className='p-5 pt-10'>
+              <div className='text-[26px] font-bold text-center uppercase'>
+                Blogs
+              </div>
+            </div>
+            <div className='grid grid-cols-1 md:grid-cols-1 xl:grid-cols-2 2xl:grid-cols-2 gap-5 pt-5'>
+              <div className='flex flex-wrap md:flex-nowrap shadow-lg mx-auto max-w-3xl group transform 
+              duration-500 rounded-2xl overflow-hidden cursor-pointer'>
+                <img className='w-full md:w-52 object-cover' src={faker.image.technics(640, 480, true)} alt='' />
+                <div className='leading-normal'>
+                  <div className='p-4'>
+                    <h5 className='mb-2 text-2xl font-bold tracking-tight'>
+                      {faker.lorem.sentence()}
+                    </h5>
+                    <p>
+                      {faker.lorem.sentences()}
+                    </p>
+                  </div>
+                  <div className='h-full bg-blue-50 p-4'>
+                    <img className='mr-4 w-12 h-12 rounded-full object-cover inline-flex w-full' src={faker.image.avatar()} alt=''/>
+                    <div>
+                      <p>{faker.name.fullName()}</p>
+                      <p>{faker.name.jobTitle()}-{faker.name.jobDescriptor()}</p>
+                      <p>{faker.address.city()},{faker.address.country()}</p>
+                      <p>{faker.date.past().toUTCString()}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <div id='about' className='pl-5 pr-5'></div>
         </div>
       </div>
