@@ -83,13 +83,13 @@ function App() {
               <img className='xl:max-w=6xl' src={Hero} alt='' />
               <div className='content bg-white md:p-12 p-12 pt-8 lg:max-w-3xl w-full lg:absolute top-48 right-5 shadow-2xl'>
                 <div className='flex justify-between font-bold text-sm'>
-                  <p>Peaceful Glasses</p>
+                  <p>Eyeglasses</p>
                   <p>{faker.date.past().getFullYear()}</p>
                 </div>
-                <h2 className='text-5xl font-bold mt-4 md:mt-10 uppercase'>Peaceful Glasses</h2>
+                <h2 className='text-5xl font-bold mt-4 md:mt-10 uppercase'>Eyeglasses</h2>
                 <p className='pt-5'>{faker.lorem.sentence()}</p>
                 <p className='text-center text-[24px] pt-10 pb-10'>
-                  <button className='p-3 w-60 text-black font-bold rounded-full transform duration-500' style={{ background: '#888888' }}> Register Now </button>
+                  <button className='p-3 w-60 text-black font-bold rounded-full transform duration-500' style={{ background: '#888888' }}> Buy Now </button>
                 </p>
               </div>
             </div>
