@@ -355,7 +355,7 @@ function App() {
             <div className='grid grid-cols-1 md:grid-cols-1 xl:grid-cols-2 2xl:grid-cols-2 gap-5 pt-5'>
               <div className='flex flex-wrap md:flex-nowrap shadow-lg mx-auto max-w-3xl group transform 
               duration-500 rounded-2xl overflow-hidden cursor-pointer'>
-                <img className='w-full md:w-52 object-cover' src={faker.image.technics(640, 480, true)} alt='' />
+                <img className='w-full md:w-52 object-cover' src={faker.image.abstract(640, 480, true)} alt='' />
                 <div className='leading-normal'>
                   <div className='p-4'>
                     <h5 className='mb-2 text-2xl font-bold tracking-tight'>
