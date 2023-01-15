@@ -10,7 +10,7 @@ import Glasses01 from './assets/glasses-01.jpg';
 import Glasses02 from './assets/glasses-02.jpg';
 import Glasses03 from './assets/glasses-03.jpg';
 import Glasses04 from './assets/glasses-04.jpg';
-import Glasses05 from './assets/glasses-05.jpeg';
+import Glasses05 from './assets/glasses-05.jpg';
 import Lens01 from './assets/lens-01.jpg'
 import Lens02 from './assets/lens-02.jpg'
 import Lens03 from './assets/lens-03.jpg'
