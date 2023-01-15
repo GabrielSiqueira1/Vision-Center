@@ -14,6 +14,18 @@ npm run start
 
 ## About the system
 
-This web-site 
+This site is an optical center focusing on eyewear. The images below describe its format and specifications.
+
+<div align="center">
+	<img src="./readme-images/1.png" />
+</div>
+
+<div align="center">
+	<img src="./readme-images/2.png" />
+</div>
+
+<div align="center">
+	<img src="./readme-images/3.png" />
+</div>
 
 </div>
